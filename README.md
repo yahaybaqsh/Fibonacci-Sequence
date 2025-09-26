@@ -13,6 +13,10 @@ The project consists of two main components:
 
 ### Iterative Approach - `fibs(n)`
 The iterative version uses a loop to efficiently generate the Fibonacci sequence:
+<img width="1537" height="812" alt="لقطة الشاشة 2025-09-26 111111" src="https://github.com/user-attachments/assets/822492d2-c12b-4b59-b9c2-04202eebcdfa" />
+<img width="1212" height="790" alt="لقطة الشاشة 2025-09-26 111128" src="https://github.com/user-attachments/assets/52650a20-5061-4b0e-ac87-ced8006d0a10" />
+
+![gif](https://github.com/user-attachments/assets/8fd6fb5d-4330-4273-8cb1-56ace4dfb610)
 
 ```javascript
 function fibs(n) {
@@ -28,7 +32,3 @@ function fibs(n) {
 }
 
 
-<img width="1537" height="812" alt="لقطة الشاشة 2025-09-26 111111" src="https://github.com/user-attachments/assets/822492d2-c12b-4b59-b9c2-04202eebcdfa" />
-<img width="1212" height="790" alt="لقطة الشاشة 2025-09-26 111128" src="https://github.com/user-attachments/assets/52650a20-5061-4b0e-ac87-ced8006d0a10" />
-
-![gif](https://github.com/user-attachments/assets/8fd6fb5d-4330-4273-8cb1-56ace4dfb610)
