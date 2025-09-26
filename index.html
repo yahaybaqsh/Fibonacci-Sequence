@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion - Fibonacci & Merge Sort</title>
+     <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Recursion: Fibonacci & Merge Sort</h1>
+            <p class="subtitle">Explore two classic recursive algorithms: generating Fibonacci sequences and implementing merge sort for efficient array sorting.</p>
+        </header>
+
+        <div class="content">
+            <div class="card">
+                <h2><i class="fas fa-square-root-alt"></i> Fibonacci Sequence</h2>
+                <div class="input-group">
+                    <label for="fibInput">Number of Fibonacci terms:</label>
+                    <input type="number" id="fibInput" placeholder="Enter a number (e.g., 8)" min="1" max="20" value="8">
+                </div>
+                <button onclick="runFibonacci()">Generate Fibonacci Sequence</button>
+                
+                <div class="result" id="fibResult">
+                    <h3>Results:</h3>
+                    <div id="fibOutput"></div>
+                </div>
+                
+                <div class="console-output" id="fibConsole">
+                    <h3>Recursive Calls:</h3>
+                    <div id="fibConsoleOutput"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-sort-amount-down"></i> Merge Sort</h2>
+                <div class="input-group">
+                    <label for="sortInput">Array to sort (comma-separated):</label>
+                    <input type="text" id="sortInput" placeholder="e.g., 3,2,1,13,8,5,0,1" value="3,2,1,13,8,5,0,1">
+                </div>
+                <button onclick="runMergeSort()">Sort Array</button>
+                
+                <div class="result" id="sortResult">
+                    <h3>Results:</h3>
+                    <div id="sortOutput"></div>
+                </div>
+                
+                <div class="console-output" id="sortConsole">
+                    <h3>Sorting Steps:</h3>
+                    <div id="sortConsoleOutput"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="explanation">
+            <h2>Understanding Recursion</h2>
+            <div class="explanation-content">
+                <div>
+                    <h3>Fibonacci Sequence</h3>
+                    <p>The Fibonacci sequence is defined as each number being the sum of the two preceding ones: <span class="highlight">F(n) = F(n-1) + F(n-2)</span>.</p>
+                    <p><span class="code">Iterative approach</span>: Uses a loop to build the sequence efficiently with O(n) time complexity.</p>
+                    <p><span class="code">Recursive approach</span>: Directly implements the mathematical definition but has exponential time complexity O(2^n) without memoization.</p>
+                    <p>The recursive version demonstrates how a problem can be broken down into smaller subproblems of the same type.</p>
+                </div>
+                <div>
+                    <h3>Merge Sort</h3>
+                    <p>Merge sort is a classic <span class="highlight">divide-and-conquer</span> algorithm that recursively splits an array into halves until single elements remain.</p>
+                    <p><span class="highlight">Base case</span>: An array with 0 or 1 element is already sorted.</p>
+                    <p><span class="highlight">Recursive case</span>: Split the array, recursively sort both halves, then merge them back together in sorted order.</p>
+                    <p>Merge sort has O(n log n) time complexity, making it much more efficient than simple sorting algorithms like bubble sort for large datasets.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
